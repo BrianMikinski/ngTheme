@@ -14,13 +14,15 @@ import { MatListModule} from '@angular/material/list';
 import { MatIconModule} from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { HomeComponent } from './home/home.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoanFormComponent,
     MainNavComponent,
-    HomeComponent
+    HomeComponent,
+    CalculatorComponent
   ],
   imports: [
     FormsModule,

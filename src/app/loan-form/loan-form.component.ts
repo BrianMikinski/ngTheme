@@ -29,7 +29,7 @@ export class LoanFormComponent implements OnInit {
     return value;
   }
 
-    /**
+  /**
    * format percent values
    * @param value
    */
