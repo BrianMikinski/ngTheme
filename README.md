@@ -1,4 +1,7 @@
 # ThemeTest
+This project is a playground for Angular Material forms customization and  themeing.
+
+## Cli Version
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 

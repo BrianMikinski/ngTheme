@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LoanFormComponent implements OnInit {
 
   price: number = 1050;
+  taxRate: number = .001;
+  salesTax: number = 0;
 
   constructor() { }
 
@@ -25,6 +27,14 @@ export class LoanFormComponent implements OnInit {
     }
 
     return value;
+  }
+
+    /**
+   * format percent values
+   * @param value
+   */
+  formatPercent(value: number) {
+    return Math.round(value * 100) + "%";
   }
 
 }
