@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoanFormComponent implements OnInit {
 
+  price: number = 1050;
+
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  /**
+  * format number values
+  * @param value
+  */
+  formatThousands(value: number) {
+    if (value >= 1000) {
+      return "$" + `${Math.round(value / 1000)}k`;
+    }
+
+    return value;
   }
 
 }

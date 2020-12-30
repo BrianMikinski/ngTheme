@@ -1,4 +1,45 @@
-<p class="text-center">
-    loan-form works!
-</p>
+<form>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-center">
+                Loan Form Works!
+            </p>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-md-12">
+            <p class="mt-2">
+                <label class="float-left text-uppercase pricing-label">
+                    Sales Price
+                </label>
+                <mat-form-field appearance="outline" class="float-right pricing-input">
+                    <input matInput [(ngModel)]="price" type="number" min="0.00" step="1" placeholder=""
+                        name="salesPrice">
+                    <span matPrefix>$&nbsp;</span>
+                    <!--<mat-hint align="end">
+                {{formatABThousandValues(loanB.name, loanB.price, loanC.name, loanC.price)}}
+              </mat-hint>-->
+                </mat-form-field>
+                <br />
+                <mat-slider class="input-slider" thumbLabel [displayWith]="formatThousands" [invert]="false"
+                    [max]="1000000" [min]="0" [step]="1000" [tickInterval]="1000" [(ngModel)]="price" [vertical]="false"
+                    name="salesPriceSlider">
+
+                </mat-slider>m
+            </p>
+
+        </div>
+    </div>
+</form>
+<!-- <div class="row">
+    <div class="col" style="background-color: red;">
+        One of three columns
+    </div>
+    <div class="col" style="background-color: yellow;">
+        One of three columns
+    </div>
+    <div class="col" style="background-color: blue;">
+        One of three columns
+    </div>
+</div> -->
