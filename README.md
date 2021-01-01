@@ -1,5 +1,52 @@
 # ThemeTest
-This project is a playground for Angular Material forms customization and  themeing.
+This project is a playground for Angular Material forms customization and theming.
+
+## Custom Theme
+- https://material.angular.io/guide/theming
+    -  place in `theme.scss` or `styles.scss`
+
+## Theming Material Components Across an Application
+- Do this is the styles or theme sass file
+
+## Theming Specific Material Components
+- https://github.com/angular/components/blob/master/src/material/core/theming/_all-theme.scss
+    - @include mat-form-theme($candy-app-theme);
+    - See the `styles.scss` file
+
+## Adding Bootstrap to Project (Note: THIS IS NOT DONE BY DEFAULT!)
+- Install via npm
+    - npm install bootstrap jquery
+    - Add to angular.json in the **architect** and **test** areas for both styles and packages
+
+## Customizing SASS rules for Angular Material in an individual component
+- don't forget to specify the selector for the element
+    - <calculator> </calculator>
+    - ```
+        calculator .css-class { 
+            color: blue
+        }
+      ```
+- https://material.angular.io/guide/customizing-component-styles
+
+
+## Customizing Overlay Components
+- ```css
+  // Add this to your global stylesheet after your theme setup
+  .myapp-no-padding-dialog .mat-dialog-container {
+   padding: 0;
+  }
+  ```
+- ```typescript
+  this.dialog.open(MyDialogComponent, {panelClass: 'myapp-no-padding-dialog'})
+  ```
+
+## View Encapsulation - "Help, an Angular Material Component will not style the way I want it to"
+- What is it and what do you do with it?
+    - View encapsulation ensures that the scss in your components only affects the desired component and none of it's children, be they custom components or library components such as Angular Material, Bootstrap, etc.
+- https://material.angular.io/guide/customizing-component-styles
+- https://angular.io/guide/view-encapsulation
+
+
 
 ## Cli Version
 

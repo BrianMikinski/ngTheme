@@ -10,10 +10,10 @@
     <div class="row">
         <div class="col-md-12">
             <p class="mt-2">
-                <label class="float-left text-uppercase">
+                <label class="text-uppercase">
                     Sales Price
                 </label>
-                <mat-form-field appearance="outline" class="float-right">
+                <mat-form-field appearance="outline" >
                     <input matInput [(ngModel)]="price" type="number" min="0.00" step="1" placeholder=""
                         name="salesPrice">
                     <span matPrefix>$&nbsp;</span>
@@ -22,20 +22,18 @@
                 <mat-slider class="input-slider" thumbLabel [displayWith]="formatThousands" [invert]="false"
                     [max]="1000000" [min]="0" [step]="1000" [tickInterval]="1000" [(ngModel)]="price" [vertical]="false"
                     name="salesPriceSlider">
-
                 </mat-slider>
             </p>
-
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
             <p class="mt-2">
-                <label class="float-left text-uppercase pricing-label">
+                <label class="text-uppercase pricing-label">
                   State Sales Tax
                 </label>
-                <mat-form-field appearance="outline" class="float-right pricing-input">
+                <mat-form-field appearance="outline" class="pricing-input">
                   <input matInput [(ngModel)]="taxRate" type="number" min="0" step=".0001" placeholder="" name="stateSalesTax">
                 </mat-form-field>
                 <mat-form-field appearance="standard" class="pricing-input">

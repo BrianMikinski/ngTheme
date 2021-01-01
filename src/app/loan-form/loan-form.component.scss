@@ -1,6 +1,43 @@
 
 
 mat-form-field input {
-    color: red;
+    color: blue;
     text-align: right;
 }
+
+
+
+// div.mat-form-field-prefix.ng-tns-c66-1.ng-star-inserted {
+//     color: pink;
+//     background-color: purple;
+// }
+
+
+// .mat-form-field.mat-form-field {
+//     color: pink;
+//     background-color: purple;
+//   }
+
+//   .mat-form-field-appearance-outline .mat-form-field-prefix{
+//     color: pink;
+//     background-color: purple;
+//   }
+
+// NOTE: this is only enabled by the 
+/**
+ *
+ * @component({
+ * ...
+ * ...
+ * ...
+ * encapsulation: ViewEncapsulation.None
+ * }
+ *
+ *
+**/
+
+  div.mat-form-field-prefix {
+    color: pink;
+    background-color: purple;
+    top: 0em !important;
+  }

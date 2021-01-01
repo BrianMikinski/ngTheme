@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-loan-form',
   templateUrl: './loan-form.component.html',
-  styleUrls: ['./loan-form.component.scss']
+  styleUrls: ['./loan-form.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class LoanFormComponent implements OnInit {
 

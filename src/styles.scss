@@ -31,3 +31,24 @@ $candy-app-theme: mat-light-theme((
 @include angular-material-theme($candy-app-theme);
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+// Customizing Individual Material Fields
+// NOTE: Custom app themes should come before "@include angular-material-theme"
+// below to below to insure styles are not duplicated
+$custom-mat-app-primary: mat-palette($mat-deep-orange);
+
+$custom-mat-app-theme: mat-light-theme((
+  color: (
+    primary: $custom-mat-app-primary,
+    accent: $custom-mat-app-primary,
+    warn: $custom-mat-app-primary,  
+  )
+));
+
+// @include mat-core-theme($custom-mat-app-theme);
+// @include mat-button-theme($custom-mat-app-theme);
+// @include mat-checkbox-theme($custom-mat-app-theme);
+// @include mat-form-field-theme($custom-mat-app-theme);
+// @include mat-input-theme($custom-mat-app-theme);
+// @include mat-slider-theme($custom-mat-app-theme);
