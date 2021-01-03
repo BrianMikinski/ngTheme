@@ -1,16 +1,54 @@
-
 <h1 class="home-paragraph text-uppercase">
     Theme Test Home Page!
 </h1>
 
+<h2>
+    Bootstrap Layouts
+</h2>
+
 <div class="row">
-    <div class="col-md-4" style="background-color: red;">
+    <div class="col" style="background-color: red;">
         One of three columns
     </div>
-    <div class="col-md-4" style="background-color: yellow;">
+    <div class="col" style="background-color: yellow;">
         One of three columns
     </div>
-    <div class="col-lg-4" style="background-color: blue;">
+    <div class="col" style="background-color: blue;">
         One of three columns
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+
+<h2>
+   Reactive Forms Basic Example 
+</h2>
+<div class="row">
+    <div class="col">
+        <form [formGroup]="myForm">
+
+            Value: {{ myForm.value | json }}
+        
+            <hr>
+        
+            <mat-form-field>
+                <input matInput placeholder="email" formControlName="email">
+            </mat-form-field>
+        
+            <mat-form-field>
+                <textarea matInput placeholder="your message..." formControlName="message"></textarea>
+            </mat-form-field>
+        
+            <mat-form-field>
+                <mat-select formControlName="career" placeholder="career">
+                    <mat-option value="Magician">Magician</mat-option>
+                    <mat-option value="Clown">Clown</mat-option>
+                    <mat-option value="Juggler">Juggler</mat-option>
+                </mat-select>
+            </mat-form-field>
+        
+        </form>
     </div>
 </div>
